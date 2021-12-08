@@ -1,3 +1,4 @@
+// dependencies
 import React from 'react';
 import {
   BrowserRouter as Router,
@@ -5,11 +6,15 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Navigation from './components/Nav/index'
+
+// components
+
 
 function App() {
   return (
     <div className="App">
-      
+      <Navigation />
     </div>
   );
 }

@@ -1,50 +1,52 @@
 import React from "react";
+import Pagetitle from "../elements/Pagetitle";
 
 const brandlogoData = [
   {
     id: 1,
-    image: "images/client-1.svg",
+    image: "images/html5-icon.png",
   },
   {
     id: 2,
-    image: "images/client-2.svg",
+    image: "images/css3-icon.png",
   },
   {
     id: 3,
-    image: "images/client-3.svg",
+    image: "images/javascript-icon.png",
   },
   {
     id: 4,
-    image: "images/client-4.svg",
+    image: "images/react-icon.png",
   },
   {
     id: 5,
-    image: "images/client-5.svg",
+    image: "images/mongodb-icon.png",
   },
   {
     id: 6,
-    image: "images/client-6.svg",
+    image: "images/mysql-icon.png",
   },
   {
     id: 7,
-    image: "images/client-7.svg",
+    image: "images/nodejs-icon.png",
   },
   {
     id: 8,
-    image: "images/client-8.svg",
+    image: "images/sass-icon.png",
   },
 ];
 
 function Brandlogos() {
   return (
-    <div id="branglogos">
+    <div id="branglogos" style={{marginTop: '5rem'}}>
       <div className="container">
+        <Pagetitle title="Skills" />
         <div className="row">
           {brandlogoData.map((brandlogo) => (
-            <div className="col-md-3 col-6" key={brandlogo.id}>
+            <div className="col-md-3 col-6 my-5" key={brandlogo.id}>
               <div className="client-item">
                 <div className="inner">
-                  <img src={brandlogo.image} alt="client-name" />
+                  <img src={brandlogo.image} alt="web-tech-icon" />
                 </div>
               </div>
             </div>

@@ -14,20 +14,20 @@ const aboutContent = {
 const progressData = [
   {
     id: 1,
-    title: "Development",
-    percantage: 85,
+    title: "Javascript",
+    percantage: 95,
     progressColor: "#FFD15C",
   },
   {
     id: 2,
-    title: "UI/UX Design",
-    percantage: 95,
+    title: "Databases and APIs",
+    percantage: 85,
     progressColor: "#FF4C60",
   },
   {
     id: 3,
-    title: "Photography",
-    percantage: 70,
+    title: "Front-End Design",
+    percantage: 75,
     progressColor: "#6C6CE5",
   },
 ];
@@ -72,8 +72,8 @@ function About() {
                 <div className="col-md-6">
                   <p>{aboutContent.content}</p>
                   <div className="mt-3">
-                    <a href="!#" className="btn btn-default">
-                      Download CV
+                    <a href="/images/Resume.pdf" className="btn btn-default">
+                      Download Resume
                     </a>
                   </div>
                   <div

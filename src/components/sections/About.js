@@ -8,7 +8,7 @@ const aboutContent = {
   name: "Bolby",
   avatarImage: "/images/avatar-2.svg",
   content:
-    "I am Bolby Doe, web developer from London, United Kingdom. I have rich experience in web site design and building and customization, also I am good at WordPress.",
+    "I am Maxwell Walin, a web developer from Orange County, California. I have  experience with the MERN Stack (MongoDB, Express.js, React.js, Node.js), including skills and technologies like MySQL, Handlebars.js, RESTful API routing, and Bcrypt. I love building websites and apps that provide users with a streamlined, responsive UI and solve problems for business owners.",
 };
 
 const progressData = [
@@ -36,26 +36,20 @@ const counterData = [
   {
     id: 1,
     title: "Projects completed",
-    count: 198,
+    count: 20,
     icon: "icon-fire",
   },
   {
     id: 2,
-    title: "Cup of coffee",
-    count: 5670,
+    title: "Cups of coffee",
+    count: 251,
     icon: "icon-cup",
   },
   {
     id: 3,
     title: "Satisfied clients",
-    count: 427,
+    count: 1,
     icon: "icon-people",
-  },
-  {
-    id: 4,
-    title: "Nominees winner",
-    count: 35,
-    icon: "icon-badge",
   },
 ];
 
@@ -105,7 +99,7 @@ function About() {
         <div className="spacer" data-height="70"></div>
         <div className="row fix-spacing">
           {counterData.map((counter) => (
-            <div key={counter.id} className="col-md-3 col-sm-6">
+            <div key={counter.id} className="col-md-4 col-sm-8">
               <TrackVisibility once>
                 <Counter counterItem={counter} />
               </TrackVisibility>

@@ -1,131 +1,149 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 
-function Header({ light, toggleMenu, headerToggler }) {
-  const handleClasses = () => {
-    let classes = "desktop-header-1 d-flex align-items-start flex-column";
-    if (light & toggleMenu) {
-      classes += " light open";
-    } else if (toggleMenu) {
-      classes += " open";
-    } else if (light) {
-      classes += " light";
-    }
-    return classes;
+function Header() {
+  const [toggleNavbar, setToggleNavbar] = useState(false);
+
+  const handleMobilenav = (e) => {
+    e.preventDefault();
+    setToggleNavbar(!toggleNavbar);
   };
-  const handleMobileClasses = () => {
-    let classes = "mobile-header-1";
-    if (light & toggleMenu) {
-      classes += " light open";
-    } else if (toggleMenu) {
-      classes += " open";
-    } else if (light) {
-      classes += " light";
+
+  document.addEventListener("click", function (e) {
+    if (e.target.closest(".content-3")) {
+      setToggleNavbar(false);
     }
-    return classes;
-  };
+  });
+
   return (
-    <>
-      <header className={handleMobileClasses()}>
-        <div className="container">
-          <div className="menu-icon d-inline-flex mr-4">
-            <button onClick={headerToggler}>
-              <span></span>
-            </button>
-          </div>
-
-        </div>
-      </header>
-      <header className={handleClasses()}>
-        <nav>
-          <Link
-            activeClass="active"
-            to="section-home"
-            spy={true}
-            smooth={true}
-            duration={500}
+    <header
+      className={"desktop-header-3 fixed-top"}
+    >
+      <div className="container">
+        <nav className="navbar navbar-expand-lg navbar-dark">
+          <button
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            className="navbar-toggler"
+            data-target="#navbarNavDropdown"
+            data-toggle="collapse"
+            type="button"
+            onClick={handleMobilenav}
           >
-            <h2 style={{ color: '#FFF' }}>
-              Maxwell Walin
-            </h2>
-          </Link>
-          <ul className="vertical-menu scrollspy">
-            <li>
-              <Link
-                activeClass="active"
-                to="section-home"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <i className="icon-home"></i>Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="section-about"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <i className="icon-user-following"></i>About
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="section-services"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <i className="icon-briefcase"></i>Services
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="section-experiences"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <i className="icon-graduation"></i>Experience
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="section-works"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <i className="icon-layers"></i>Works
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="section-contact"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <i className="icon-bubbles"></i>Contact
-              </Link>
-            </li>
-          </ul>
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div
+            className={
+              toggleNavbar
+                ? "collapse navbar-collapse show"
+                : "collapse navbar-collapse"
+            }
+            id="navbarNavDropdown"
+          >
+            <Link
+              className='m-auto'
+              style={{ color: '#FFF', textDecoration: 'none' }}
+              activeClass="active"
+              to="section-home"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              <h2 style={{ color: '#FFF' }}>
+                Maxwell Walin
+              </h2>
+            </Link>
+            <ul className="navbar-nav ml-auto scrollspy">
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  className="nav-link"
+                  to="section-home"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  className="nav-link"
+                  to="section-about"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  About
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  className="nav-link"
+                  to="section-services"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  Service
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  className="nav-link"
+                  to="section-experiences"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  Experience
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  className="nav-link"
+                  to="section-works"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  Works
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  className="nav-link"
+                  to="section-skills"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  Skills
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  className="nav-link"
+                  to="section-contact"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
         </nav>
-
-        <div className="footer">
-          <span className="copyright">
-            &copy; {new Date().getFullYear()} Maxwell Walin.
-          </span>
-        </div>
-      </header>
-    </>
+      </div>
+    </header>
   );
 }
 

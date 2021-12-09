@@ -1,7 +1,7 @@
 import React from "react";
 
 function Service({ service }) {
-  const { title, content, icon, color } = service;
+  const { title, content, icon, color, contentColor } = service;
   const hexToRgb = (hex) => {
     const temp = hex
       .replace(
@@ -16,7 +16,11 @@ function Service({ service }) {
 
   return (
     <div
-      className={"service-box rounded data-background padding-30 text-center shadow-blue"}
+      className={
+        contentColor === "light"
+          ? "service-box rounded data-background padding-30 text-center text-light shadow-blue"
+          : "service-box rounded data-background padding-30 text-center shadow-blue"
+      }
       data-color="#6C6CE5"
       style={{
         background: color,

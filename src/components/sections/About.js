@@ -72,7 +72,7 @@ function About() {
                 <div className="col-md-6">
                   <p>{aboutContent.content}</p>
                   <div className="mt-3">
-                    <a href="/images/Resume.pdf" className="btn btn-default">
+                    <a href="/images/Resume.pdf" target="_blank" className="btn btn-default">
                       Download Resume
                     </a>
                   </div>

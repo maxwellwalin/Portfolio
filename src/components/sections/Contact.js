@@ -29,7 +29,7 @@ function Contact() {
       setMessage("Message is required");
     } else {
       setError(false);
-      setMessage("You message has been sent!!!");
+      setMessage("You message has been sent!");
     }
   };
 
@@ -53,7 +53,7 @@ function Contact() {
   return (
     <section id="contact">
       <div className="container">
-        <Pagetitle title="Get in Touch" />
+        <Pagetitle title="Get In Touch" />
 
         <div className="row">
           <div className="col-md-4">
@@ -63,7 +63,7 @@ function Contact() {
                 animateOut="fadeInOut"
                 animateOnce={true}
               >
-                <h3>Let's talk about everything!</h3>
+                <h3>Like what you see? Please, reach out!</h3>
               </ScrollAnimation>
               <ScrollAnimation
                 animateIn="fadeInUp"
@@ -72,7 +72,7 @@ function Contact() {
               >
                 <p>
                   Don't like forms? Send me an{" "}
-                  <a href="mailto:name@example.com">email</a>. 👋
+                  <a href="mailto:maxwellwalin@gmail.com">email</a>. 👋
                 </p>
               </ScrollAnimation>
             </div>

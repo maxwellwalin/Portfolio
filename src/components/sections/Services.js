@@ -7,27 +7,27 @@ const servicesData = [
   {
     id: 1,
     icon: "images/service-1.svg",
-    title: "UI/UX design",
+    title: "Front-End Design",
     content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
+      "Front-End design and responsiveness is a top priority for all of my websites and applications.",
     color: "#6C6CE5",
     contentColor: "light",
   },
   {
     id: 2,
     icon: "images/service-2.svg",
-    title: "Web Development",
+    title: "Javascript",
     content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
+      "Applying efficient, complex functionality and user interactivity is my strongest web development skill.",
     color: "#F9D74C",
     contentColor: "dark",
   },
   {
     id: 3,
     icon: "images/service-3.svg",
-    title: "Photography",
+    title: "Databases and APIs",
     content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
+      "My background in mathematics proves to be useful when designing, querying, and mutating data.",
     color: "#F97B8B",
     contentColor: "light",
   },

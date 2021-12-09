@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
-import Logo from "../elements/Logo";
 
-function Header2({ light, logoSource, toggleMenu, headerToggler }) {
+function Header2({ light, toggleMenu, headerToggler }) {
   const handleClasses = () => {
     let classes = "desktop-header-2 d-flex align-items-start flex-column";
     if (light & toggleMenu) {

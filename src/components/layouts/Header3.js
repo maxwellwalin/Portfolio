@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import Logo from "../elements/Logo";
 
-function Header3({ light, logoSource, bootstrapNav }) {
+function Header3({ light }) {
   const [toggleNavbar, setToggleNavbar] = useState(false);
 
   const handleMobilenav = (e) => {
@@ -46,6 +45,19 @@ function Header3({ light, logoSource, bootstrapNav }) {
             }
             id="navbarNavDropdown"
           >
+            <Link
+              className='m-auto'
+              style={{ color: '#FFF', textDecoration: 'none' }}
+              activeClass="active"
+              to="section-home"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              <h2 style={{ color: '#FFF' }}>
+                Maxwell Walin
+              </h2>
+            </Link>
             <ul className="navbar-nav ml-auto scrollspy">
               <li className="nav-item">
                 <Link

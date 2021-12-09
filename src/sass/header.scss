@@ -30,8 +30,6 @@ header.desktop-header-1 {
 		transform: translateX(0);
 	}
 
-	.site-logo {}
-
 	/* === Vertical Menu === */
 	.vertical-menu {
 		list-style: none;
@@ -206,7 +204,6 @@ header.desktop-header-2 {
 		transform: translateX(0);
 	}
 
-	.site-logo {}
 
 	/* === Vertical Menu === */
 	.vertical-menu {
@@ -337,7 +334,7 @@ header.mobile-header-1 {
 			background: #FFF;
 			border-radius: 5px;
 			height: 4px;
-			position: relative;
+			position: sticky;
 			width: 30px;
 
 			&:before {

@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
-import Logo from "../elements/Logo";
 
-function Header({ light, logoSource, toggleMenu, headerToggler }) {
+function Header({ light, toggleMenu, headerToggler }) {
   const handleClasses = () => {
     let classes = "desktop-header-1 d-flex align-items-start flex-column";
     if (light & toggleMenu) {
@@ -39,6 +38,17 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
       </header>
       <header className={handleClasses()}>
         <nav>
+          <Link
+            activeClass="active"
+            to="section-home"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            <h2 style={{ color: '#FFF' }}>
+              Maxwell Walin
+            </h2>
+          </Link>
           <ul className="vertical-menu scrollspy">
             <li>
               <Link

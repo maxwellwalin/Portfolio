@@ -28,7 +28,7 @@ function Herosection(props) {
 
           <h1 className="mb-2 mt-0">Maxwell Walin</h1>
           <p>
-            I'm a{" "}
+            Hi! I'm a{" "}
             <Typed
               strings={[
                 "Full Stack Developer",
@@ -50,12 +50,12 @@ function Herosection(props) {
           <ul className="social-icons light list-inline mb-0 mt-4">
             <li className="list-inline-item">
               <a href="https://www.linkedin.com/in/maxwell-walin/" target="_blank" rel="noreferrer">
-                <i className="fab fa-linkedin"></i>
+                <i className="fab fa-linkedin fa-2x"></i>
               </a>
             </li>
             <li className="list-inline-item">
               <a href="https://github.com/maxwellwalin" target="_blank" rel="noreferrer">
-                <i className="fab fa-github"></i>
+                <i className="fab fa-github fa-2x"></i>
               </a>
             </li>
           </ul>
@@ -68,7 +68,7 @@ function Herosection(props) {
               smooth={true}
               duration={500}
             >
-              Hire me
+              Hire Me
             </Link>
           </div>
         </div>

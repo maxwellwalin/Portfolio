@@ -34,11 +34,9 @@ function Header2({ light, logoSource, toggleMenu, headerToggler }) {
               <span></span>
             </button>
           </div>
-          <Logo logoSource={logoSource} />
         </div>
       </header>
       <header className={handleClasses()}>
-        <Logo logoSource={logoSource} />
         <nav>
           <ul className="vertical-menu scrollspy">
             <li>
@@ -123,7 +121,7 @@ function Header2({ light, logoSource, toggleMenu, headerToggler }) {
 
         <div className="footer">
           <span className="copyright">
-            &copy; {new Date().getFullYear()} Bolby Template.
+            &copy; {new Date().getFullYear()} Maxwell Walin.
           </span>
         </div>
       </header>

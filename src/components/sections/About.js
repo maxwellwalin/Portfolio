@@ -6,7 +6,7 @@ import Skill from "../elements/Skill";
 
 const aboutContent = {
   name: "Maxwell",
-  avatarImage: "/images/avatar-2.svg",
+  avatarImage: "/images/avatar-5.svg",
   content:
     "I am Maxwell Walin, a web developer from Orange County, California. I have  experience with the MERN Stack (MongoDB, Express.js, React.js, Node.js), including skills and technologies like MySQL, Handlebars.js, RESTful API routing, and Bcrypt. I love building websites and apps that provide users with a streamlined, responsive UI and solve problems for business owners.",
 };

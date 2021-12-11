@@ -42,7 +42,7 @@ function Header() {
             id="navbarNavDropdown"
           >
             <Link
-              className='m-auto'
+              className='m-auto nav-link'
               style={{ color: '#FFF', textDecoration: 'none' }}
               activeClass="active"
               to="section-home"

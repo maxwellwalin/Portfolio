@@ -23,7 +23,8 @@ function Portfolio({ portfolio }) {
           <div className="details">
             <span className="term text-capitalize">{category}</span>
             <h4 className="title">{title}</h4>
-            <span className="more-button">{<i className="icon-magnifier-add"></i>}</span>
+            <h5 className="title">{subtitle}</h5>
+            <span className="more-button"><i className="icon-magnifier-add"></i></span>
           </div>
           <div className="thumb">
             <img src={image} alt="Portfolio-title" />

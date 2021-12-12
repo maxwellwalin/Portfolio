@@ -29,7 +29,7 @@ const filters = [
 const allData = [
   {
     id: 1,
-    title: "Midnight Motorsports E-Commerce Store",
+    title: "Midnight Motorsports",
     subtitle: "E-Commerce Store",
     category: "react",
     image: "images/works/1.svg",

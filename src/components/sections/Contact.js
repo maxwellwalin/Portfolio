@@ -10,27 +10,11 @@ function Contact() {
     message: "",
   });
 
-  const [error, setError] = useState(false);
-  const [message, setMessage] = useState("");
-
   const submitHandler = (event) => {
     event.preventDefault();
-    if (!formdata.name) {
-      setError(true);
-      setMessage("Name is required");
-    } else if (!formdata.email) {
-      setError(true);
-      setMessage("Email is required");
-    } else if (!formdata.subject) {
-      setError(true);
-      setMessage("Subject is required");
-    } else if (!formdata.message) {
-      setError(true);
-      setMessage("Message is required");
-    } else {
-      setError(false);
-      setMessage("You message has been sent!");
-    }
+    return (
+      <div className="alert alert-success mt-4">You message has been sent!</div>
+      )
   };
 
   const handleChange = (event) => {
@@ -38,16 +22,6 @@ function Contact() {
       ...formdata,
       [event.currentTarget.name]: event.currentTarget.value,
     });
-  };
-
-  const handleAlerts = () => {
-    if (error && message) {
-      return <div className="alert alert-danger mt-4">{message}</div>;
-    } else if (!error && message) {
-      return <div className="alert alert-success mt-4">{message}</div>;
-    } else {
-      return null;
-    }
   };
 
   return (
@@ -81,7 +55,7 @@ function Contact() {
           <div className="col-md-8">
             <form
               id="contact-form"
-              className="contact-form mt-6"
+              className="contact-form mt-6 needs-validation"
               onSubmit={submitHandler}
             >
               <div className="row">
@@ -95,6 +69,7 @@ function Contact() {
                       placeholder="Your name"
                       onChange={handleChange}
                       value={formdata.name}
+                      required
                     />
                   </div>
                 </div>
@@ -109,6 +84,7 @@ function Contact() {
                       placeholder="Email address"
                       onChange={handleChange}
                       value={formdata.email}
+                      required
                     />
                   </div>
                 </div>
@@ -123,6 +99,7 @@ function Contact() {
                       placeholder="Subject"
                       onChange={handleChange}
                       value={formdata.subject}
+                      required
                     />
                   </div>
                 </div>
@@ -137,6 +114,7 @@ function Contact() {
                       placeholder="Message"
                       onChange={handleChange}
                       value={formdata.message}
+                      required
                     ></textarea>
                   </div>
                 </div>
@@ -151,7 +129,6 @@ function Contact() {
                 Send Message
               </button>
             </form>
-            {handleAlerts()}
           </div>
         </div>
       </div>

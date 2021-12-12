@@ -12,6 +12,8 @@ function Portfolio({ portfolio }) {
     }
   };
 
+
+
   return (
     <>
       <a

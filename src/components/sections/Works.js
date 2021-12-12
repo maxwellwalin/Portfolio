@@ -6,23 +6,23 @@ import Portfolio from "../elements/Portfolio";
 const filters = [
   {
     id: 1,
-    text: "Everything",
+    name: "Everything",
   },
   {
     id: 2,
-    text: "React",
+    name: "React",
   },
   {
     id: 3,
-    text: "NoSQL",
+    name: "NoSQL",
   },
   {
     id: 4,
-    text: "SQL",
+    name: "SQL",
   },
   {
     id: 5,
-    text: "Progressive Web App",
+    name: "Progressive Web Apps",
   },
 ];
 
@@ -31,14 +31,15 @@ const allData = [
     id: 1,
     title: "Midnight Motorsports",
     subtitle: "E-Commerce Store",
-    category: "react",
+    category: "React",
     image: "images/works/1.svg",
     popupLink: ["images/works/1.svg"],
   },
   {
     id: 2,
-    title: "Guest App Walkthrough Screens",
-    category: "creative",
+    title: "Home Inventory DB",
+    subtitle: "Insurance Claim Reports",
+    category: "SQL",
     image: "images/works/2.svg",
     popupLink: [
       "images/works/2.svg",
@@ -81,25 +82,20 @@ const allData = [
 
 function Works() {
   const [getAllItems] = useState(allData);
-  const [activeFilter, setActiveFilter] = useState("");
-  const [visibleItems, setVisibleItems] = useState([]);
-
-  useEffect(() => {
-    setActiveFilter(filters[0].text.toLowerCase());
-    setVisibleItems(getAllItems.filter((item) => item.id <= 6));
-  }, [getAllItems]);
+  const [activeFilter, setActiveFilter] = useState(filters[0].name);
+  const [visibleItems, setVisibleItems] = useState(getAllItems);
 
   const handleChange = (e) => {
     e.preventDefault();
-    setActiveFilter(e.target.textContent.toLowerCase());
+    setActiveFilter(e.target.textContent);
+    
     let tempData;
-    if (e.target.textContent.toLowerCase() === filters[0].text.toLowerCase()) {
-      tempData = getAllItems.filter((data) => data.id <= 6);
+    if (e.target.textContent === filters[0].name) {
+      tempData = getAllItems;
     } else {
       tempData = getAllItems.filter(
         (data) =>
-          data.category === e.target.textContent.toLowerCase() &&
-          data.id <= 6
+          data.category === e.target.textContent
       );
     }
     setVisibleItems(tempData);
@@ -121,12 +117,12 @@ function Works() {
                 <button
                   onClick={handleChange}
                   className={
-                    filter.text.toLowerCase() === activeFilter
-                      ? "text-capitalize current"
-                      : "text-capitalize"
+                    filter.name === activeFilter
+                      ? "current"
+                      : ""
                   }
                 >
-                  {filter.text}
+                  {filter.name}
                 </button>
               </li>
             ))}

@@ -34,6 +34,8 @@ const allData = [
     category: "React",
     image: "images/works/1.svg",
     popupLink: ["images/works/1.svg"],
+    repoLink: "https://github.com/Revivedaniel/MidnightMotorsports",
+    deployedLink: "https://midnight-motorsports.herokuapp.com/"
   },
   {
     id: 2,
@@ -46,6 +48,8 @@ const allData = [
       "images/works/5.svg",
       "images/works/6.svg",
     ],
+    repoLink: "https://github.com/ljbrewer/HomeInventory",
+    deployedLink: "https://powerful-dawn-85424.herokuapp.com/"
   },
   {
     id: 3,
@@ -88,7 +92,7 @@ function Works() {
   const handleChange = (e) => {
     e.preventDefault();
     setActiveFilter(e.target.textContent);
-    
+
     let tempData;
     if (e.target.textContent === filters[0].name) {
       tempData = getAllItems;
@@ -118,8 +122,7 @@ function Works() {
                   onClick={handleChange}
                   className={
                     filter.name === activeFilter
-                      ? "current"
-                      : ""
+                    && "current"
                   }
                 >
                   {filter.name}

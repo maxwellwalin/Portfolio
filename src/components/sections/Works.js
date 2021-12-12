@@ -31,7 +31,7 @@ const allData = [
     id: 1,
     title: "Midnight Motorsports",
     subtitle: "E-Commerce Store",
-    category: "React",
+    category: ["React", "NoSQL"],
     image: "images/works/1.svg",
     popupLink: ["images/works/1.svg"],
     repoLink: "https://github.com/Revivedaniel/MidnightMotorsports",
@@ -99,7 +99,7 @@ function Works() {
     } else {
       tempData = getAllItems.filter(
         (data) =>
-          data.category === e.target.textContent
+          data.category.includes(e.target.textContent)
       );
     }
     setVisibleItems(tempData);

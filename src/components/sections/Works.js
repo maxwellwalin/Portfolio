@@ -24,6 +24,10 @@ const filters = [
     id: 5,
     name: "Progressive Web Apps",
   },
+  {
+    id: 6,
+    name: "Third Party APIs",
+  },
 ];
 
 const allData = [
@@ -58,16 +62,21 @@ const allData = [
     category: ["Third Party APIs", "Javascript"],
     image: "images/works/3.svg",
     popupLink: ["https://www.youtube.com/watch?v=qf9z4ulfmYw"],
+    repoLink: "https://github.com/ljbrewer/HomeInventory",
+    deployedLink: "https://powerful-dawn-85424.herokuapp.com/"
   },
   {
     id: 4,
-    title: "Onboarding Motivation",
-    category: ["creative"],
+    title: "Book Search Engine",
+    subtitle: "Search and Add Books to List",
+    category: ["React", "Third Party APIs"],
     image: "images/works/4.svg",
     popupLink: [
       "https://www.youtube.com/watch?v=URVHRhBSjj8",
       "https://www.youtube.com/watch?v=qf9z4ulfmYw",
     ],
+    repoLink: "https://github.com/ljbrewer/HomeInventory",
+    deployedLink: "https://powerful-dawn-85424.herokuapp.com/"
   },
   {
     id: 5,
@@ -75,6 +84,8 @@ const allData = [
     category: ["art"],
     image: "images/works/5.svg",
     popupLink: ["images/works/5.svg"],
+    repoLink: "https://github.com/ljbrewer/HomeInventory",
+    deployedLink: "https://powerful-dawn-85424.herokuapp.com/"
   },
   {
     id: 6,
@@ -82,6 +93,8 @@ const allData = [
     category: ["design"],
     image: "images/works/6.svg",
     link: "https://dribbble.com",
+    repoLink: "https://github.com/ljbrewer/HomeInventory",
+    deployedLink: "https://powerful-dawn-85424.herokuapp.com/"
   }
 ];
 

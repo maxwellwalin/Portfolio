@@ -41,7 +41,7 @@ const allData = [
     id: 2,
     title: "Home Inventory DB",
     subtitle: "Insurance Claim Reports",
-    category: "SQL",
+    category: ["Handlebars.js", "SQL"],
     image: "images/works/2.svg",
     popupLink: [
       "images/works/2.svg",
@@ -53,15 +53,16 @@ const allData = [
   },
   {
     id: 3,
-    title: "Delivery App Wireframe",
-    category: "branding",
+    title: "Michelin Star Finder",
+    subtitle: "Restaurant Locator and Pathfinder",
+    category: ["Third Party APIs", "Javascript"],
     image: "images/works/3.svg",
     popupLink: ["https://www.youtube.com/watch?v=qf9z4ulfmYw"],
   },
   {
     id: 4,
     title: "Onboarding Motivation",
-    category: "creative",
+    category: ["creative"],
     image: "images/works/4.svg",
     popupLink: [
       "https://www.youtube.com/watch?v=URVHRhBSjj8",
@@ -71,14 +72,14 @@ const allData = [
   {
     id: 5,
     title: "iMac Mockup Design",
-    category: "art",
+    category: ["art"],
     image: "images/works/5.svg",
     popupLink: ["images/works/5.svg"],
   },
   {
     id: 6,
     title: "Game Store App Concept",
-    category: "design",
+    category: ["design"],
     image: "images/works/6.svg",
     link: "https://dribbble.com",
   }

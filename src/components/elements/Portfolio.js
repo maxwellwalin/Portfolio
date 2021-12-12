@@ -12,7 +12,15 @@ function Portfolio({ portfolio }) {
     }
   };
 
+  let categoryTerm = category[0]
 
+  if (typeof category === "object" && category.length > 1) {
+    categoryTerm = [];
+    category.map(cat => 
+      categoryTerm.push(cat, " & ")
+      )
+    categoryTerm.pop();
+  }
 
   return (
     <>
@@ -22,7 +30,7 @@ function Portfolio({ portfolio }) {
           <div className="linkNoLink"
             onClick={handleLightbox}
           >
-            <span className="term text-capitalize">{category}</span>
+            <span className="term">{categoryTerm}</span>
             <h4 className="title">{title}</h4>
             <h5 className="title">{subtitle}</h5>
             <span className="more-button"><i className="icon-magnifier-add"></i></span>

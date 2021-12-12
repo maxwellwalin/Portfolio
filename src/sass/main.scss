@@ -571,14 +571,10 @@ select.portfolio-filter-mobile {
 
     h4.title {
       font-size: 20px;
+    }
 
-      a {
-        color: $colordark;
-
-        &:hover {
-          color: $colorpink;
-        }
-      }
+    h5.subtitle {
+      font-size: 20px;
     }
   }
 

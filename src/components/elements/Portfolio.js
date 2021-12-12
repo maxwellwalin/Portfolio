@@ -19,7 +19,7 @@ function Portfolio({ portfolio }) {
 
       <div className="portfolio-item rounded shadow-dark">
         <div className="details">
-          <div
+          <div className="linkNoLink"
             onClick={handleLightbox}
           >
             <span className="term text-capitalize">{category}</span>

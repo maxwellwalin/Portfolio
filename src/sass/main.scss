@@ -292,6 +292,10 @@ section.home {
       top: 80px;
     }
 
+    .linkNoLink:hover {
+      cursor: pointer;
+    }
+
     span.term {
       color: #fff;
       background: $colorpink;

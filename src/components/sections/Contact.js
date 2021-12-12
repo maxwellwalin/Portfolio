@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Pagetitle from "../elements/Pagetitle";
+import emailjs from 'emailjs-com';
 
 function Contact() {
   const [formdata, setFormdata] = useState({
@@ -10,14 +11,15 @@ function Contact() {
     message: "",
   });
 
+  const [contacted, setContacted] = useState(false);
+
   const submitHandler = (event) => {
     event.preventDefault();
-    return (
-      <div className="alert alert-success mt-4">You message has been sent!</div>
-      )
+    setContacted(true);
   };
 
   const handleChange = (event) => {
+    setContacted(false);
     setFormdata({
       ...formdata,
       [event.currentTarget.name]: event.currentTarget.value,
@@ -129,6 +131,7 @@ function Contact() {
                 Send Message
               </button>
             </form>
+            {contacted && <div className="alert alert-success mt-4">Your message has been sent. I will reply within 2-5 business days. Thank you!</div>}
           </div>
         </div>
       </div>

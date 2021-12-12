@@ -75,26 +75,28 @@ const allData = [
       "https://www.youtube.com/watch?v=URVHRhBSjj8",
       "https://www.youtube.com/watch?v=qf9z4ulfmYw",
     ],
-    repoLink: "https://github.com/ljbrewer/HomeInventory",
-    deployedLink: "https://powerful-dawn-85424.herokuapp.com/"
+    repoLink: "https://github.com/maxwellwalin/book-search-engine",
+    deployedLink: "https://arcane-caverns-86366.herokuapp.com/"
   },
   {
     id: 5,
-    title: "iMac Mockup Design",
-    category: ["art"],
+    title: "Budget PWA",
+    subtitle: "Traveller-Friendly Budgeting Tool",
+    category: ["Progressive Web Apps", "Javascript"],
     image: "images/works/5.svg",
     popupLink: ["images/works/5.svg"],
-    repoLink: "https://github.com/ljbrewer/HomeInventory",
-    deployedLink: "https://powerful-dawn-85424.herokuapp.com/"
+    repoLink: "https://github.com/maxwellwalin/budget-pwa",
+    deployedLink: "https://warm-dawn-31983.herokuapp.com/"
   },
   {
     id: 6,
-    title: "Game Store App Concept",
-    category: ["design"],
+    title: "Workout Tracker",
+    subtitle: "Create Workouts and Track Progress",
+    category: ["NoSQL", "Express.js"],
     image: "images/works/6.svg",
     link: "https://dribbble.com",
-    repoLink: "https://github.com/ljbrewer/HomeInventory",
-    deployedLink: "https://powerful-dawn-85424.herokuapp.com/"
+    repoLink: "https://github.com/maxwellwalin/workout-tracker",
+    deployedLink: "https://young-wave-37253.herokuapp.com/"
   }
 ];
 

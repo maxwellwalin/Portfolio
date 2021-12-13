@@ -1,7 +1,7 @@
 import React from "react";
 import Pagetitle from "../elements/Pagetitle";
 
-const brandlogoData = [
+const skillData = [
   {
     id: 1,
     image: "images/html5-icon.png",
@@ -36,17 +36,17 @@ const brandlogoData = [
   },
 ];
 
-function Brandlogos() {
+function Skills() {
   return (
     <section id="skills">
       <div className="container">
         <Pagetitle title="Skills" />
         <div className="row">
-          {brandlogoData.map((brandlogo) => (
-            <div className="col-md-3 col-6 my-5" key={brandlogo.id}>
+          {skillData.map((skill) => (
+            <div className="col-md-3 col-6 my-5" key={skill.id}>
               <div className="skills-item">
                 <div className="inner">
-                  <img src={brandlogo.image} alt="web-tech-icon" />
+                  <img src={skill.image} alt="web-tech-icon" />
                 </div>
               </div>
             </div>
@@ -57,4 +57,4 @@ function Brandlogos() {
   );
 }
 
-export default Brandlogos;
+export default Skills;

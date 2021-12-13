@@ -4,7 +4,7 @@ import { Element } from "react-scroll";
 import Header from "../components/layouts/Header";
 import Footer from "../components/layouts/Footer";
 import About from "../components/sections/About";
-import Brandlogos from "../components/sections/Brandlogos";
+import Skills from "../components/sections/Skills";
 import Contact from "../components/sections/Contact";
 import Experiences from "../components/sections/Experiences";
 import Herosection from "../components/sections/Herosection";
@@ -34,7 +34,7 @@ function Homepage() {
           <Works />
         </Element>
         <Element name="section-skills">
-          <Brandlogos />
+          <Skills />
         </Element>
         <Element name="section-contact">
           <Contact />

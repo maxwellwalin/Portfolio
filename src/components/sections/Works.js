@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Pagetitle from "../elements/Pagetitle";
 import Portfolio from "../elements/Portfolio";

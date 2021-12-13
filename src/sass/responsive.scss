@@ -41,16 +41,9 @@ only screen and (min-device-pixel-ratio: 1.5){
 	.portfolio-filter {
 		display: none;
 	}
-	.portfolio-item, .blog-item {
+	.portfolio-item {
 		max-width: 360px;
 		margin: auto;
-	}
-	.blog-wrapper {
-		margin: -20px 0;
-		.blog-item {
-			margin-top: 15px;
-			margin-bottom: 15px;
-		}
 	}
 	section.home .cta h1 {
 		font-size: 52px;
@@ -162,19 +155,6 @@ only screen and (min-device-pixel-ratio: 1.5){
 			bottom: 10%;
 			right: 10%;
 		}
-	}
-}
-
-@media only screen and (max-width: 360px) {
-
-}
-
-@media only screen and (max-width: 380px) {
-	.blog-page-section .blog-pagination ul li {
-		height: 40px;
-		width: 40px;
-		line-height: 40px;
-		margin: 0 5px;
 	}
 }
 

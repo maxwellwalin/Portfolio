@@ -38,7 +38,7 @@ const brandlogoData = [
 
 function Brandlogos() {
   return (
-    <section id="skills" style={{marginTop: '5rem'}}>
+    <section id="skills">
       <div className="container">
         <Pagetitle title="Skills" />
         <div className="row">

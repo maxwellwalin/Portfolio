@@ -33,7 +33,7 @@ function Homepage() {
         <Element name="section-works">
           <Works />
         </Element>
-        <Element name="section-brandlogos">
+        <Element name="section-skills">
           <Brandlogos />
         </Element>
         <Element name="section-contact">

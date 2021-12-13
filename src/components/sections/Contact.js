@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Pagetitle from "../elements/Pagetitle";
 import emailjs from 'emailjs-com';
+require('dotenv').config()
 
 function Contact() {
   const [formdata, setFormData] = useState({
@@ -19,7 +20,7 @@ function Contact() {
     event.preventDefault();
     setContacted(true);
 
-    emailjs.sendForm('service_58pivsn', 'template_o6ubzpv', form.current, 'user_6NTSPvwgNeDGUGk3fdqAE')
+    emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_EMAIL_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAIL_USER_ID)
       .then((result) => {
           console.log(result.text);
       }, (error) => {

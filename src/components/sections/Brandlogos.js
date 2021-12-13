@@ -44,7 +44,7 @@ function Brandlogos() {
         <div className="row">
           {brandlogoData.map((brandlogo) => (
             <div className="col-md-3 col-6 my-5" key={brandlogo.id}>
-              <div className="client-item">
+              <div className="skills-item">
                 <div className="inner">
                   <img src={brandlogo.image} alt="web-tech-icon" />
                 </div>

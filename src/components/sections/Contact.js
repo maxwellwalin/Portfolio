@@ -4,7 +4,7 @@ import Pagetitle from "../elements/Pagetitle";
 import emailjs from 'emailjs-com';
 
 function Contact() {
-  const [formdata, setFormdata] = useState({
+  const [formdata, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
@@ -13,14 +13,30 @@ function Contact() {
 
   const [contacted, setContacted] = useState(false);
 
+  const form = useRef()
+
   const submitHandler = (event) => {
     event.preventDefault();
     setContacted(true);
+
+    emailjs.sendForm('service_58pivsn', 'template_o6ubzpv', form.current, 'user_6NTSPvwgNeDGUGk3fdqAE')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
   };
 
   const handleChange = (event) => {
     setContacted(false);
-    setFormdata({
+    setFormData({
       ...formdata,
       [event.currentTarget.name]: event.currentTarget.value,
     });
@@ -39,7 +55,7 @@ function Contact() {
                 animateOut="fadeInOut"
                 animateOnce={true}
               >
-                <h3>Like what you see? Please, reach out!</h3>
+                <h3>Please, reach out to me about anything!</h3>
               </ScrollAnimation>
               <ScrollAnimation
                 animateIn="fadeInUp"
@@ -57,6 +73,7 @@ function Contact() {
           <div className="col-md-8">
             <form
               id="contact-form"
+              ref={form}
               className="contact-form mt-6 needs-validation"
               onSubmit={submitHandler}
             >

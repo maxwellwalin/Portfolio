@@ -42,7 +42,7 @@ const counterData = [
   {
     id: 2,
     title: "Cups of coffee",
-    count: 251,
+    count: Math.floor(Date.now()/86400000-18700),
     icon: "icon-cup",
   },
   {

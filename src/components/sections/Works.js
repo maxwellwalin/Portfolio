@@ -51,21 +51,21 @@ const allData = [
   },
   {
     id: 3,
-    title: "Michelin Star Finder",
-    subtitle: "Restaurant Locator and Pathfinder",
-    category: ["Third Party APIs", "Javascript"],
-    image: "images/works/3.svg",
-    repoLink: "https://github.com/ljbrewer/HomeInventory",
-    deployedLink: "https://powerful-dawn-85424.herokuapp.com/"
-  },
-  {
-    id: 4,
     title: "Book Search Engine",
     subtitle: "Search and Add Books to List",
     category: ["React", "Third Party APIs"],
     image: "images/works/4.svg",
     repoLink: "https://github.com/maxwellwalin/book-search-engine",
     deployedLink: "https://arcane-caverns-86366.herokuapp.com/"
+  },
+  {
+    id: 4,
+    title: "Workout Tracker",
+    subtitle: "Create Workouts and Track Progress",
+    category: ["NoSQL", "Express.js"],
+    image: "images/works/6.svg",
+    repoLink: "https://github.com/maxwellwalin/workout-tracker",
+    deployedLink: "https://young-wave-37253.herokuapp.com/"
   },
   {
     id: 5,
@@ -78,12 +78,12 @@ const allData = [
   },
   {
     id: 6,
-    title: "Workout Tracker",
-    subtitle: "Create Workouts and Track Progress",
-    category: ["NoSQL", "Express.js"],
-    image: "images/works/6.svg",
-    repoLink: "https://github.com/maxwellwalin/workout-tracker",
-    deployedLink: "https://young-wave-37253.herokuapp.com/"
+    title: "Michelin Star Finder",
+    subtitle: "Restaurant Locator and Pathfinder",
+    category: ["Third Party APIs", "Javascript"],
+    image: "images/works/3.svg",
+    repoLink: "https://github.com/JerichoRonquillo/Michelin-star-finder",
+    deployedLink: "https://jerichoronquillo.github.io/Michelin-star-finder/"
   }
 ];
 

@@ -37,7 +37,6 @@ const allData = [
     subtitle: "E-Commerce Store",
     category: ["React", "NoSQL"],
     image: "images/works/1.svg",
-    popupLink: ["images/works/1.svg"],
     repoLink: "https://github.com/Revivedaniel/MidnightMotorsports",
     deployedLink: "https://midnight-motorsports.herokuapp.com/"
   },
@@ -47,11 +46,6 @@ const allData = [
     subtitle: "Insurance Claim Reports",
     category: ["Handlebars.js", "SQL"],
     image: "images/works/2.svg",
-    popupLink: [
-      "images/works/2.svg",
-      "images/works/5.svg",
-      "images/works/6.svg",
-    ],
     repoLink: "https://github.com/ljbrewer/HomeInventory",
     deployedLink: "https://powerful-dawn-85424.herokuapp.com/"
   },
@@ -61,7 +55,6 @@ const allData = [
     subtitle: "Restaurant Locator and Pathfinder",
     category: ["Third Party APIs", "Javascript"],
     image: "images/works/3.svg",
-    popupLink: ["https://www.youtube.com/watch?v=qf9z4ulfmYw"],
     repoLink: "https://github.com/ljbrewer/HomeInventory",
     deployedLink: "https://powerful-dawn-85424.herokuapp.com/"
   },
@@ -71,10 +64,6 @@ const allData = [
     subtitle: "Search and Add Books to List",
     category: ["React", "Third Party APIs"],
     image: "images/works/4.svg",
-    popupLink: [
-      "https://www.youtube.com/watch?v=URVHRhBSjj8",
-      "https://www.youtube.com/watch?v=qf9z4ulfmYw",
-    ],
     repoLink: "https://github.com/maxwellwalin/book-search-engine",
     deployedLink: "https://arcane-caverns-86366.herokuapp.com/"
   },
@@ -84,7 +73,6 @@ const allData = [
     subtitle: "Traveller-Friendly Budgeting Tool",
     category: ["Progressive Web Apps", "Javascript"],
     image: "images/works/5.svg",
-    popupLink: ["images/works/5.svg"],
     repoLink: "https://github.com/maxwellwalin/budget-pwa",
     deployedLink: "https://warm-dawn-31983.herokuapp.com/"
   },
@@ -94,7 +82,6 @@ const allData = [
     subtitle: "Create Workouts and Track Progress",
     category: ["NoSQL", "Express.js"],
     image: "images/works/6.svg",
-    link: "https://dribbble.com",
     repoLink: "https://github.com/maxwellwalin/workout-tracker",
     deployedLink: "https://young-wave-37253.herokuapp.com/"
   }

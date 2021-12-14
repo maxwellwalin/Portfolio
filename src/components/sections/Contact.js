@@ -70,7 +70,6 @@ function Contact() {
               </ScrollAnimation>
             </div>
           </div>
-
           <div className="col-md-8">
             <form
               id="contact-form"

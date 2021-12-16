@@ -1,19 +1,14 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Max W. Dev Portfolio",
+  "name": "Maxwell Walin's Developer Portfolio",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
+      "src": "/images/avatar-1.svg",
+      "type": "image/svg",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "/images/portfolio-preview.PNG",
       "type": "image/png",
       "sizes": "512x512"
     }

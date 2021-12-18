@@ -148,7 +148,7 @@ function Contact() {
                 Send Message
               </button>
             </form>
-            {contacted && <div className="alert alert-success mt-4">Your message has been sent. I will reply within 2-5 business days. Thank you!</div>}
+            {contacted && <div className="alert alert-success mt-4">Your message has been sent. I will reply within 2 business days. Thank you!</div>}
           </div>
         </div>
       </div>

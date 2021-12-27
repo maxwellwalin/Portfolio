@@ -24,7 +24,7 @@ const skillData = [
   },
   {
     id: 6,
-    image: "images/mysql-icon.png",
+    image: "images/sass-icon.png",
   },
   {
     id: 7,
@@ -32,7 +32,23 @@ const skillData = [
   },
   {
     id: 8,
-    image: "images/sass-icon.png",
+    image: "images/apollo-icon.png",
+  },
+  {
+    id: 9,
+    image: "images/mysql-icon.png",
+  },
+  {
+    id: 10,
+    image: "images/sketch-icon.png",
+  },
+  {
+    id: 11,
+    image: "images/handlebars-icon.png",
+  },
+  {
+    id: 12,
+    image: "images/graphql-icon.png",
   },
 ];
 

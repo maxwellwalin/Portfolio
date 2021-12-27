@@ -42,7 +42,7 @@ const counterData = [
   {
     id: 2,
     title: "Hours spent coding",
-    count: Math.floor(Date.now()/80000000-18700),
+    count: Math.floor((Date.now()/86400000-18500)*4),
     icon: "icon-cup",
   },
   {

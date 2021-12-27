@@ -31,17 +31,15 @@ function Herosection(props) {
             Hi! I'm a{" "}
             <Typed
               strings={[
-                "Full Stack Developer",
                 "Software Engineer",
                 "Web Developer",
-                "music lover",
                 "Front End Developer",
                 "Back End Developer",
+                "Full Stack Developer"
               ]}
               typeSpeed={80}
               backSpeed={40}
               attr="value"
-              loop
             >
               <label value></label>
             </Typed>

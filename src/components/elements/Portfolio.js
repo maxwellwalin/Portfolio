@@ -38,7 +38,7 @@ function Portfolio({ portfolio }) {
           <span className="portfolio-links"><a href={repoLink} target="_blank" rel="noreferrer">View Repository</a> | <a href={deployedLink} target="_blank" rel="noreferrer">Deployed Website</a></span>
         </div>
         <div className="thumb">
-          <img src={image} alt="Portfolio-title" />
+          <img src={image} alt="Portfolio-title" className="portfolioImg" />
           <div className="mask"></div>
         </div>
       </div>

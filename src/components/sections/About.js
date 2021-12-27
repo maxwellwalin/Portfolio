@@ -8,26 +8,26 @@ const aboutContent = {
   name: "Maxwell",
   avatarImage: "/images/avatar-5.svg",
   content:
-    "I am Maxwell Walin, a web developer from Orange County, California. I have  experience with the MERN Stack (MongoDB, Express.js, React.js, Node.js), including skills and technologies like MySQL, Handlebars.js, RESTful API routing, and Bcrypt. I love building websites and apps that provide users with a streamlined, responsive UI and solve problems for business owners.",
+    "I am Maxwell Walin, a software engineer from Orange County, California. I love building websites and apps that solve problems for business owners by providing their users and potential customers with a streamlined, responsive experience. \nI thrive with the MERN Stack using Apollo Client & GraphQL API."
 };
 
 const progressData = [
   {
     id: 1,
-    title: "Javascript",
-    percantage: 95,
+    title: "JavaScript",
+    percantage: 100,
     progressColor: "#FFD15C",
   },
   {
     id: 2,
     title: "Databases and APIs",
-    percantage: 85,
+    percantage: 100,
     progressColor: "#FF4C60",
   },
   {
     id: 3,
     title: "Front-End Design",
-    percantage: 75,
+    percantage: 100,
     progressColor: "#6C6CE5",
   },
 ];
@@ -41,14 +41,14 @@ const counterData = [
   },
   {
     id: 2,
-    title: "Cups of coffee",
-    count: Math.floor(Date.now()/86400000-18700),
+    title: "Hours spent coding",
+    count: Math.floor(Date.now()/80000000-18700),
     icon: "icon-cup",
   },
   {
     id: 3,
-    title: "Satisfied clients",
-    count: 1,
+    title: "Collaborated with",
+    count: 23,
     icon: "icon-people",
   },
 ];

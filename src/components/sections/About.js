@@ -15,19 +15,19 @@ const progressData = [
   {
     id: 1,
     title: "JavaScript",
-    percantage: 100,
+    percantage: 95 ,
     progressColor: "#FFD15C",
   },
   {
     id: 2,
     title: "Databases and APIs",
-    percantage: 100,
+    percantage: 87,
     progressColor: "#FF4C60",
   },
   {
     id: 3,
     title: "Front-End Design",
-    percantage: 100,
+    percantage: 80,
     progressColor: "#6C6CE5",
   },
 ];

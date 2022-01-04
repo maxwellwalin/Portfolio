@@ -23,31 +23,15 @@ const skillData = [
     image: "images/mongodb-icon.png",
   },
   {
-    id: 6,
-    image: "images/sass-icon.png",
-  },
-  {
     id: 7,
     image: "images/nodejs-icon.png",
   },
   {
     id: 8,
-    image: "images/apollo-icon.png",
-  },
-  {
-    id: 9,
     image: "images/mysql-icon.png",
   },
   {
-    id: 10,
-    image: "images/sketch-icon.png",
-  },
-  {
-    id: 11,
-    image: "images/handlebars-icon.png",
-  },
-  {
-    id: 12,
+    id: 9,
     image: "images/graphql-icon.png",
   },
 ];
@@ -57,7 +41,27 @@ function Skills() {
     <section id="skills">
       <div className="container">
         <Pagetitle title="Skills" />
-        <div className="row">
+        <div className="row d-flex align-items-center">
+          <div className="col-md-3 col-6">
+            <div className="skills-item">
+              <div data-iframe-width="212" data-iframe-height="250" data-share-badge-id="3811351e-49b9-4e64-aabc-8ee40547d49f" data-share-badge-host="https://www.credly.com"></div>
+            </div>
+          </div>
+          <div className="col-md-3 col-6">
+            <div className="skills-item">
+              <div data-iframe-width="212" data-iframe-height="250" data-share-badge-id="4fce2955-6081-4f34-872a-9aa1ba687514" data-share-badge-host="https://www.credly.com"></div>
+            </div>
+          </div>
+          <div className="col-md-3 col-6">
+            <div className="skills-item">
+              <div data-iframe-width="212" data-iframe-height="250" data-share-badge-id="d3601cca-a0ff-46cd-ac37-245b82cb5cd3" data-share-badge-host="https://www.credly.com"></div>
+            </div>
+          </div>
+          <div className="col-md-3 col-6">
+            <div className="skills-item">
+              <div data-iframe-width="212" data-iframe-height="250" data-share-badge-id="88f87ef6-c8c6-475d-88db-f2eb6e84abfd" data-share-badge-host="https://www.credly.com"></div>
+            </div>
+          </div>
           {skillData.map((skill) => (
             <div className="col-md-3 col-6 my-5" key={skill.id}>
               <div className="skills-item">

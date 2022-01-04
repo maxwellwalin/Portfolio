@@ -1,6 +1,8 @@
 {
-  "name": "maxwell",
+  "name": "maxwell-walin-portfolio",
   "version": "1.0.2",
+  "homepage": "http://maxwellwalin.com",
+  "description": "Maxwell Walin's developer portfolio, showcasing his skills, experiences, and recent works.",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",

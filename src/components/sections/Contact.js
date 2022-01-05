@@ -13,10 +13,14 @@ function Contact() {
 
   const [contacted, setContacted] = useState(false);
 
+  const [loadingEmail, setLoadingEmail] = useState(false);
+
   const form = useRef()
 
   const submitHandler = (event) => {
     event.preventDefault()
+
+    setLoadingEmail(true)
 
     fetch('https://mw-portfolio-email-api.herokuapp.com/email', {
       method: 'POST',
@@ -27,6 +31,7 @@ function Contact() {
       body: JSON.stringify(formdata)
     }).then((res) => {
       if (res.status === 200) {
+        setLoadingEmail(false)
         setContacted(true)
         setFormData({
           fullName: '',
@@ -78,6 +83,7 @@ function Contact() {
               id="contact-form"
               ref={form}
               className="contact-form mt-6 needs-validation"
+              onSubmit={submitHandler}
             >
               <div className="row">
                 <div className="column col-md-6">
@@ -140,15 +146,24 @@ function Contact() {
                   </div>
                 </div>
               </div>
-              <button
-                name="submit"
-                id="submit"
-                value="Submit"
-                className="btn btn-default"
-                onClick={submitHandler}
-              >
-                Send Message
-              </button>
+              {loadingEmail ?
+                <input
+                  type="submit"
+                  name="submit"
+                  value="Sending..."
+                  id="submit"
+                  className="btn btn-default"
+                  disabled
+                >
+                </input>
+                : <input
+                  type="submit"
+                  name="submit"
+                  value="Send Message"
+                  id="submit"
+                  className="btn btn-default"
+                >
+                </input>}
             </form>
             {contacted && <div className="alert alert-success mt-4">Your message has been sent. I will reply within 2 business days. Thank you!</div>}
           </div>

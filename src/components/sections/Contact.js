@@ -78,7 +78,6 @@ function Contact() {
               id="contact-form"
               ref={form}
               className="contact-form mt-6 needs-validation"
-              onSubmit={submitHandler}
             >
               <div className="row">
                 <div className="column col-md-6">
@@ -142,11 +141,11 @@ function Contact() {
                 </div>
               </div>
               <button
-                type="submit"
                 name="submit"
                 id="submit"
                 value="Submit"
                 className="btn btn-default"
+                onClick={submitHandler}
               >
                 Send Message
               </button>

@@ -8,7 +8,7 @@ const aboutContent = {
   name: "Maxwell",
   avatarImage: "/images/avatar-5.svg",
   content:
-    "I am Maxwell Walin, a software engineer from Orange County, California. I love building websites and apps that solve problems for business owners by providing their users and potential customers with a streamlined, responsive experience. \nI thrive with the MERN Stack using Apollo Client & GraphQL API."
+    "I am Maxwell Walin, a freelance web developer from Orange County, California. I love building responsive and functionality-focused websites that provide crucial services for businesses like website design and production, digital marketing, and social media outreach."
 };
 
 const progressData = [

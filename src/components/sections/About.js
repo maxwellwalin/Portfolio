@@ -14,13 +14,13 @@ const aboutContent = {
 const progressData = [
   {
     id: 1,
-    title: "JavaScript",
+    title: "Web Development",
     percantage: 95 ,
     progressColor: "#FFD15C",
   },
   {
     id: 2,
-    title: "Databases and APIs",
+    title: "Digital Marketing",
     percantage: 87,
     progressColor: "#FF4C60",
   },

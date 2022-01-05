@@ -9,25 +9,25 @@ const servicesData = [
     icon: "images/service-1.svg",
     title: "Front-End Design",
     content:
-      "Using CSS/SASS, Sketch, and HTML, I create clean, responsive front-end designs for all of my websites.",
+      "I create beautiful and interactive front-end designs that drive user engagement and increase dwell time.",
     color: "#6C6CE5",
     contentColor: "light",
   },
   {
     id: 2,
     icon: "images/service-2.svg",
-    title: "JavaScript",
+    title: "Web Development",
     content:
-      "Applying efficient, complex functionality and user interactivity brings life to my web applications.",
+      "I build responsive and efficient websites that help businesses acquire new customers and retain loyal ones.",
     color: "#F9D74C",
     contentColor: "dark",
   },
   {
     id: 3,
     icon: "images/service-3.svg",
-    title: "Databases and APIs",
+    title: "Digital Marketing",
     content:
-      "Scalability and optimization are a top priority for me when designing, querying, and mutating data.",
+      "I lead digital marketing campaigns that focus on Search Engine Optimization and social media outreach and engagement.",
     color: "#F97B8B",
     contentColor: "light",
   },

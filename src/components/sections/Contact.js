@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Pagetitle from "../elements/Pagetitle";
-import emailjs from 'emailjs-com';
 require('dotenv').config()
 
 function Contact() {
@@ -17,22 +16,26 @@ function Contact() {
   const form = useRef()
 
   const submitHandler = (event) => {
-    event.preventDefault();
-    setContacted(true);
+    event.preventDefault()
 
-    emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_EMAIL_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAIL_USER_ID)
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
+    fetch('https://mw-portfolio-email-api.herokuapp.com/email', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formdata)
+    }).then((res) => {
+      if (res.status === 200) {
+        setContacted(true)
+        setFormData({
+          fullName: '',
+          email: '',
+          subject: '',
+          message: ''
+        })
+      }
+    }).catch(err => console.log(err));
   };
 
   const handleChange = (event) => {

@@ -1,7 +1,7 @@
 {
   "name": "maxwell-walin-portfolio",
   "version": "1.0.2",
-  "homepage": "http://maxwellwalin.com",
+  "homepage": "https://maxwellwalin.com",
   "description": "Maxwell Walin's developer portfolio, showcasing his skills, experiences, and recent works.",
   "private": true,
   "dependencies": {
@@ -13,7 +13,6 @@
     "bootstrap": "^5.0.2",
     "disqus-react": "^1.1.0",
     "dotenv": "^10.0.0",
-    "emailjs-com": "^3.2.0",
     "fslightbox-react": "^1.6.2",
     "markdown-to-jsx": "^7.1.5",
     "react": "^17.0.2",

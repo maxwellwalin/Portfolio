@@ -15,6 +15,8 @@ function Contact() {
 
   const [loadingEmail, setLoadingEmail] = useState(false);
 
+  const [messageFailed, setMessageFailed] = useState([false, ""]);
+
   const form = useRef()
 
   const submitHandler = (event) => {
@@ -40,7 +42,7 @@ function Contact() {
           message: ''
         })
       }
-    }).catch(err => console.log(err));
+    }).catch(err => setMessageFailed([true, err]));
   };
 
   const handleChange = (event) => {
@@ -152,7 +154,7 @@ function Contact() {
                   name="submit"
                   value="Sending..."
                   id="submit"
-                  className="btn btn-default"
+                  className="btn btn-disabled"
                   disabled
                 >
                 </input>
@@ -165,7 +167,8 @@ function Contact() {
                 >
                 </input>}
             </form>
-            {contacted && <div className="alert alert-success mt-4">Your message has been sent. I will reply within 2 business days. Thank you!</div>}
+            {contacted ? <div className="alert alert-success mt-4">Your message has been sent. I will reply within 2 business days. Thank you!</div> : null}
+            {messageFailed[0] ? <div className="alert alert-danger mt-4">Your message failed to send. I have been notified of the error. Please, send me an <a href="mailto:maxwellwalin@gmail.com">email</a> and I'll get back to you ASAP!</div> : null}
           </div>
         </div>
       </div>

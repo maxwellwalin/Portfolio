@@ -36,7 +36,7 @@ function Contact() {
         setLoadingEmail(false)
         setContacted(true)
         setFormData({
-          fullName: '',
+          name: '',
           email: '',
           subject: '',
           message: ''

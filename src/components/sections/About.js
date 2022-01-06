@@ -8,7 +8,7 @@ const aboutContent = {
   name: "Maxwell",
   avatarImage: "/images/avatar-5.svg",
   content:
-    "I am Maxwell Walin, a freelance web developer from Orange County, California. I love building responsive and functionality-focused websites that provide crucial services for businesses like website design and production, digital marketing, and social media outreach."
+    "I am Maxwell Walin, a freelance web developer from Orange County, California. I love building responsive and functionality-focused websites that provide crucial services for businesses like web design, full-stack web development, and digital marketing."
 };
 
 const progressData = [

@@ -8,14 +8,14 @@ const educationData = [
     title: "Certificate of Completion",
     years: "December 2021",
     content:
-      "Graduated with an A+ from UC Irvine's Full Stack Flex Program, an instensive 24-week web development program.",
+      "UC Irvine & 2U: Graduated with an A+ from the Full Stack Flex Program, an instensive 24-week full-stack web development program.",
   },
   {
     id: 2,
-    title: "High School Diploma + UC General Education",
+    title: "High School Diploma / UC General Ed",
     years: "2015 - 2019",
     content:
-      "Satisfied all of UC general education requirements needed for transferring into a University of California during high school.",
+      "Early College HS & UC Santa Barbara: Satisfied all of UC general education requirements needed for transferring into a University of California during high school.",
   },
 ];
 
@@ -29,10 +29,10 @@ const experienceData = [
   },
   {
     id: 2,
-    title: "Materials Coordinator Assistant",
-    years: "November 2018 - July 2019, October 2020 - November 2021",
+    title: "Tutor & Learning Assistant",
+    years: "January 2022 - Present",
     content:
-      "At Brilliant AV, I created efficiency for all members of the company by redesigning, modernizing, and implementing processes and working directly with the operations, management, and installation teams.",
+      "2U & Trilogy Education: Teach and assist students who are learning full-stack web development, including JavaScript, React, Node, HTML/CSS, NoSQL/SQL databases, and much more.",
   },
 ];
 

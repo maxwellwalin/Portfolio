@@ -11,7 +11,7 @@ function Pagetitle({ title }) {
       >
         <h2 className="section-title">{title}</h2>
       </ScrollAnimation>
-      <div className="spacer" data-height="60"></div>
+      <div className="spacer" data-height="30"></div>
     </>
   );
 }

@@ -6,7 +6,7 @@ import Skill from "../elements/Skill";
 
 const aboutContent = {
   name: "Maxwell",
-  avatarImage: "/images/avatar-5.svg",
+  avatarImage: "./images/Circular Profile - BG Purp.png",
   content:
     "I am Maxwell Walin, a freelance web developer from Orange County, California. I love building responsive and functionality-focused websites that provide crucial services for businesses like web design, full-stack web development, and digital marketing."
 };
@@ -15,19 +15,19 @@ const progressData = [
   {
     id: 1,
     title: "Web Development",
-    percantage: 95 ,
+    percantage: 100,
     progressColor: "#FFD15C",
   },
   {
     id: 2,
     title: "Digital Marketing",
-    percantage: 87,
+    percantage: 100,
     progressColor: "#FF4C60",
   },
   {
     id: 3,
     title: "Front-End Design",
-    percantage: 80,
+    percantage: 100,
     progressColor: "#6C6CE5",
   },
 ];
@@ -61,7 +61,7 @@ function About() {
         <div className="row">
           <div className="col-md-3">
             <div className="text-center text-md-left">
-              <img src={aboutContent.avatarImage} alt={aboutContent.name} />
+              <img src={aboutContent.avatarImage} alt={aboutContent.name} style={{width: "min(70%, 12rem)"}} />
             </div>
             <div className="spacer d-md-none d-lg-none" data-height="30"></div>
           </div>

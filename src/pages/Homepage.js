@@ -14,7 +14,7 @@ import Works from "../components/sections/Works";
 function Homepage() {
   return (
     <>
-      <Header logoSource="/images/logo.svg" />
+      <Header />
       <main className="content-3">
         <Element name="section-home">
           <ReactCursorPosition>

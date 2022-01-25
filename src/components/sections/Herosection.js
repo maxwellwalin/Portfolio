@@ -24,7 +24,7 @@ function Herosection(props) {
     >
       <div className="container">
         <div className="intro">
-          <img src="./images/Profile - BG Yellow.png" alt="Maxwell Walin Profile Image with Yellow Background" className="mb-4" style={{width: "min(70%, 20rem)"}}/>
+          <img src="./images/Profile - BG Yellow.png" alt="Maxwell Walin Profile with Yellow Background" className="mb-4" style={{width: "min(70%, 20rem)"}}/>
 
           <h1 className="mb-2 mt-0">Maxwell Walin</h1>
           <p>

@@ -5,34 +5,34 @@ import Timeline from "../elements/Timeline";
 const educationData = [
   {
     id: 1,
-    title: "Certificate of Completion",
+    title: "Certificate of Completion from UCI",
     years: "December 2021",
     content:
-      "UC Irvine & 2U: Graduated with an A+ from the Full Stack Flex Program, an instensive 24-week full-stack web development program.",
+      "Graduated with an A+ from UCI's Full Stack Flex Program, an instensive 24-week full-stack web development program.",
   },
   {
     id: 2,
     title: "High School Diploma / UC General Ed",
     years: "2015 - 2019",
     content:
-      "Early College HS & UC Santa Barbara: Satisfied all of UC general education requirements needed for transferring into a University of California during high school.",
+      "Graduated from Early College High School on the Honor Roll with the University of California's general education requirements satisfied (IGETC Certificate).",
   },
 ];
 
 const experienceData = [
   {
     id: 1,
-    title: "Freelance Web Developer",
-    years: "July 2021 - Present",
+    title: "Full Stack Developer @ Focus360",
+    years: "April 2022 - Present",
     content:
-      "I specialize in functionality-based websites like eCommerce when freelancing, but starting my career in tech at a company is my current priority.",
+      "",
   },
   {
     id: 2,
-    title: "Tutor & Learning Assistant",
+    title: "Learning Assistant @ 2U",
     years: "January 2022 - Present",
     content:
-      "2U & Trilogy Education: Teach and assist students who are learning full-stack web development, including JavaScript, React, Node, HTML/CSS, NoSQL/SQL databases, and much more.",
+      "I teach and provide guidance to students learning full-stack web development, including technologies like React, HTML/CSS, NoSQL/SQL databases, and more.",
   },
 ];
 
@@ -40,13 +40,13 @@ function Experiences() {
   return (
     <section id="experience">
       <div className="container">
-        <Pagetitle title="Experience" />
+        <Pagetitle title="Education & Experience" />
         <div className="row">
           <div className="col-md">
             <div className="timeline edu bg-white rounded shadow-dark padding-30 overflow-hidden">
-              {educationData.map((education) => (
-                <Timeline key={education.id} education={education} />
-              ))}
+              { educationData.map((education) => (
+                <Timeline key={ education.id } education={ education } />
+              )) }
               <span className="line"></span>
             </div>
           </div>
@@ -54,9 +54,9 @@ function Experiences() {
           <div className="col-md-6">
             <div className="spacer d-md-none d-lg-none" data-height="30"></div>
             <div className="timeline exp bg-white rounded shadow-dark padding-30 overflow-hidden">
-              {experienceData.map((experience) => (
-                <Timeline key={experience.id} education={experience} />
-              ))}
+              { experienceData.map((experience) => (
+                <Timeline key={ experience.id } education={ experience } />
+              )) }
               <span className="line"></span>
             </div>
           </div>

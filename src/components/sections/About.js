@@ -8,19 +8,19 @@ const aboutContent = {
   name: "Maxwell",
   avatarImage: "./images/Circular Profile - BG Purp.png",
   content:
-    "I am Maxwell Walin, a freelance web developer from Orange County, California. I love building responsive and functionality-focused websites that provide crucial services for businesses like web design, full-stack web development, and digital marketing."
+    "I am Maxwell Walin, a full stack developer from Orange County, California. I love building responsive and functionality-focused websites and web applications. I discovered my passion for web development during the pandemic, and I haven't stopped coding since!"
 };
 
 const progressData = [
   {
     id: 1,
-    title: "Web Development",
+    title: "JavaScript and React",
     percantage: 100,
     progressColor: "#FFD15C",
   },
   {
     id: 2,
-    title: "Digital Marketing",
+    title: "Back-End Development",
     percantage: 100,
     progressColor: "#FF4C60",
   },
@@ -42,7 +42,7 @@ const counterData = [
   {
     id: 2,
     title: "Hours spent coding",
-    count: Math.floor((Date.now()/86400000-18500)*4),
+    count: Math.floor((Date.now() / 86400000 - 18500) * 3),
     icon: "icon-cup",
   },
   {
@@ -61,7 +61,7 @@ function About() {
         <div className="row">
           <div className="col-md-3">
             <div className="text-center text-md-left">
-              <img src={aboutContent.avatarImage} alt={aboutContent.name} style={{width: "min(70%, 12rem)"}} />
+              <img src={ aboutContent.avatarImage } alt={ aboutContent.name } style={ { width: "min(70%, 12rem)" } } />
             </div>
             <div className="spacer d-md-none d-lg-none" data-height="30"></div>
           </div>
@@ -70,7 +70,7 @@ function About() {
             <div className="rounded bg-white shadow-dark padding-30">
               <div className="row">
                 <div className="col-md-6">
-                  <p>{aboutContent.content}</p>
+                  <p>{ aboutContent.content }</p>
                   <div className="mt-3">
                     <a href="/images/Resume.pdf" target="_blank" className="btn btn-default">
                       Download Resume
@@ -82,30 +82,30 @@ function About() {
                   ></div>
                 </div>
                 <div className="col-md-6">
-                  {progressData.map((progress) => (
+                  { progressData.map((progress) => (
                     <TrackVisibility
                       once
-                      key={progress.id}
+                      key={ progress.id }
                       className="progress-wrapper"
                     >
-                      <Skill progress={progress} />
+                      <Skill progress={ progress } />
                     </TrackVisibility>
-                  ))}
+                  )) }
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="spacer" data-height="70"></div>
-        <div className="row fix-spacing">
-          {counterData.map((counter) => (
-            <div key={counter.id} className="col-md-4 col-sm-8">
+        {/* <div className="spacer" data-height="70"></div> */ }
+        {/* <div className="row fix-spacing">
+          { counterData.map((counter) => (
+            <div key={ counter.id } className="col-md-4 col-sm-8">
               <TrackVisibility once>
-                <Counter counterItem={counter} />
+                <Counter counterItem={ counter } />
               </TrackVisibility>
             </div>
-          ))}
-        </div>
+          )) }
+        </div> */}
       </div>
     </section>
   );

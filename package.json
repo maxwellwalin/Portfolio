@@ -2,7 +2,7 @@
   "name": "maxwell-walin-portfolio",
   "version": "1.0.2",
   "homepage": "https://maxwellwalin.com",
-  "description": "Maxwell Walin's developer portfolio, showcasing his skills, experiences, and recent works.",
+  "description": "Maxwell Walin's developer portfolio, showcasing his skills, experience, and recent works.",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -36,9 +36,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [

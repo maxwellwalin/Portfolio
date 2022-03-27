@@ -25,7 +25,7 @@ const experienceData = [
     title: "Full Stack Developer @ Focus360",
     years: "April 2022 - Present",
     content:
-      "",
+      "Focus360 is an architectural visualization firm. I create, develop, and debug production-level React websites and React Native applications.",
   },
   {
     id: 2,
